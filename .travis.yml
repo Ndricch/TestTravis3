@@ -1,11 +1,14 @@
 language: java
+
 jdk:
  - openjdk8
+
 addons:
  sonarcloud:
-  organization: Ndricch
+  organization: "ndricch"
   token:
-   secure: travis encrypt e409fea4e4eb4069937615a857767c03709b4d2f
+   secure: "travis encrypt e409fea4e4eb4069937615a857767c03709b4d2f"
+
 script:
  - ant build
  - sonar-scanner
